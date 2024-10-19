@@ -50,3 +50,13 @@ p {
 .btn:hover {
   background-color: #9ca3af;
 }
+
+footer {
+  font-size: 1.75rem;
+  font-weight: 500;
+  background-color: #35424a;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

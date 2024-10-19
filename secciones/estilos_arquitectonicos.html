@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Estilos arquitectonicos</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Estilos arquitectonicos</h1>
+    </header>
+    <main>
+      <section class="flex flex-col">
+        <article class="bg-gray-200 p-4">
+          <h2 class="text-2xl font-bold">Descripción</h2>
+          <p class="mt-4 p-10">
+            Como se sabe el estilo arquitectonico es aquel que rige como se
+            trabajara la estructura del software, veremos algunos de estos
+            planos y como funcionan.
+            <br />
+            <b>Arquitectura por capas</b>
+            <br />
+            Esta arquitectura nacio para corregir los problemas que ocasionaba
+            su antecesora la arquitectura spaghetti que como no era una
+            arquitectura pero fueron los incios de lo que hoy como los planos de
+            arquitectura. la arquitectura de capas esta formada por varias capas
+            que cumplen una función especifica pero trabajan en conjunto,
+            algunas de estas capas son, visualización de datos, acceso a la base
+            de datos, etc.
+            <br />
+            <b>Arquitectura hexagonal</b>
+            <br />
+            Esta arquitectura se centra en aislar la lógica interna del
+            softaware, haciendo que haya componentes independientes que pueden
+            ser modificados sin generarle problema a otros componentes y que el
+            software funcione de manera eficiente, de mejor rendimiento y sea
+            escalable.
+            <br />
+            <b>Arquitectura MVC(Model-View-Controller)</b>
+            <br />
+            Esta arquitectura separa el software en tres secciones modelo, vista
+            y controlador
+            <br />
+            Modelo
+            <br />
+            Representa los datos y la lógica de negocio del sistema.
+            <br />
+            Vista
+            <br />
+            La vista presenta los datos al usuario, muestra la información de la
+            aplicación, esta se diseña de forma que sus partes se han
+            independientes y no afecte los datos subyacentes.
+            <br />
+            Controlador
+            <br />
+            Es aquel que hace la conexión entre la vista y el modelo, procesando
+            las solicitudes para posteriormente realizar operaciones en el
+            modelo y decidir qué vista es la que se mostrará con la información.
+            <br />
+            <b>Arquitectura de microservicios</b>
+            <br />
+            La arquitectura de microservicios se usa en el desarrollo de
+            aplicaciones que son complejas, diviendo en varios microservicios
+            que operan de manera independiente y autonoma unos de otros, siendo
+            posible que cada uno se pueda desarrollar, desplegar y escalar de
+            manera independiente.
+          </p>
+        </article>
+        <div class="flex">
+          <article
+            class="bg-gray-300 w-1/2 flex items-center justify-center p-4"
+          >
+            <img
+              width="500px"
+              src="/Arquitectura-Software/multimedia/Estilos_arquitectonicos.jpeg"
+              alt="Estilos_arquitectonicos_arquitectura_de_software"
+            />
+          </article>
+
+          <article
+            class="bg-gray-400 w-1/2 flex flex-col items-center justify-center p-4"
+          >
+            <h2 class="text-xl"><b>Usabilidad</b></h2>
+            Se usan en aplicaciones escalables y que necesitan una alta
+            disponibilidad y despliegue independiente, tambien los podemos ver
+            en sistemas con responsabilidades bien definidas y escalabilidad
+            vertical.
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>2024 Taller de Arquitectura de Software Uniremington</footer>
+  </body>
+</html>
