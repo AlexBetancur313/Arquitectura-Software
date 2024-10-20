@@ -2,16 +2,12 @@
 * {
   font-family: "Crete Round", serif;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
+
 header {
-  background-color: #35424a;
   padding: 20px;
   text-align: center;
   color: white;
+  border-bottom: #f4f4f4;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .header-title {
@@ -54,9 +50,8 @@ p {
 footer {
   font-size: 1.75rem;
   font-weight: 500;
-  background-color: #35424a;
+  background-color: rgb(2 44 34);
   padding: 10px;
   text-align: center;
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
