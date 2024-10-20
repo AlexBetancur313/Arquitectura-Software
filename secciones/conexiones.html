@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-emerald-950">
     <header class="header">
       <a
         href="../index.html"
@@ -28,25 +28,27 @@
       </a>
       <h1 class="header-title">Conexiones</h1>
     </header>
-    <main>
-      <section class="flex flex-col">
-        <article class="bg-gray-200 p-4">
-          <h2 class="text-2xl font-bold">Descripción</h2>
+    <main class="m-4 w-3/4 m-auto">
+      <section class="flex flex-col m-auto mt-4 md:w-full">
+        <article
+          class="p-4 bg-gray-300 rounded-lg wow animate__animated animate__fadeInLeft"
+        >
+          <h2 class="text-2xl text-center font-bold">Descripción</h2>
           <p class="mt-4 p-10">
             Las conexiones son las que unen los distintos componentes para que
             trabajen de forma unida y hagan funcionar la aplicación de manera
-            correcta estas conexiones pueden ser sincronas (se llaman
-            directamente entre componentes) y asincronas (son conexiones que se
-            llaman por medio de mensajes y eventos), dependiendo el tipo de
-            conexión que se elija este afectara en la eficiencia, rendimiento y
-            escalabilidad de la aplicación, esta elección también dependera de
+            correcta. Estas conexiones pueden ser síncronas (se llaman
+            directamente entre componentes) y asíncronas (son conexiones que se
+            llaman por medio de mensajes y eventos). Dependiendo del tipo de
+            conexión que se elija, esto afectará la eficiencia, rendimiento y
+            escalabilidad de la aplicación. Esta elección también dependerá de
             los requisitos que pida el software.
           </p>
         </article>
 
-        <div class="flex">
+        <div class="flex flex-col md:flex-row">
           <article
-            class="bg-gray-300 w-1/2 flex items-center justify-center p-4"
+            class="basis-1/2 md:basis-full flex items-center justify-center p-4 wow animate__animated animate__fadeInLeft"
           >
             <img
               width="500px"
@@ -56,12 +58,12 @@
           </article>
 
           <article
-            class="bg-gray-400 w-1/2 flex flex-col items-center justify-center p-4"
+            class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-300 rounded-lg mt-4 text-emerald-950 wow animate__animated animate__fadeInLeft"
           >
-            <h2 class="text-xl"><b>Usabilidad</b></h2>
+            <h2 class="text-xl text-emerald-950"><b>Usabilidad</b></h2>
             <p>
-              Estas conexiones sean sincronas o asincronas las podemos encontrar
-              en Apis Rest, en eventos, microservicios, etc.
+              Estas conexiones, sean síncronas o asíncronas, las podemos
+              encontrar en APIs Rest, eventos, microservicios, etc.
             </p>
           </article>
         </div>

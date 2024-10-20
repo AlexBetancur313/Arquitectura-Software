@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Estilos arquitectonicos</title>
+    <title>Estilos arquitectónicos</title>
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
@@ -18,96 +18,75 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-emerald-950 text-white">
     <header class="header">
       <a
         href="../index.html"
         class="absolute right-1 top-10 transform -translate-y-1/2 hover:bg-white-700 text-white font-bold py-2 px-4 rounded"
       >
-        <img width="45px" src="../multimedia/Home.png" alt="Icono_de_regreso" />
+        <img width="45px" src="../multimedia/Home.png" alt="Icono de regreso" />
       </a>
-      <h1 class="header-title">Estilos arquitectonicos</h1>
+      <h1 class="header-title">Estilos arquitectónicos</h1>
     </header>
-    <main>
-      <section class="flex flex-col">
-        <article class="bg-gray-200 p-4">
-          <h2 class="text-2xl font-bold">Descripción</h2>
+    <main class="m-4 w-3/4 m-auto">
+      <section class="flex flex-col m-auto mt-4 md:w-full">
+        <article
+          class="p-4 bg-gray-300 text-emerald-950 rounded-lg wow animate__animated animate__fadeInLeft"
+        >
+          <h2 class="text-2xl text-center font-bold text-emerald-950">
+            Descripción
+          </h2>
           <p class="mt-4 p-10">
-            Como se sabe el estilo arquitectonico es aquel que rige como se
-            trabajara la estructura del software, veremos algunos de estos
-            planos y como funcionan.
+            El estilo arquitectónico rige cómo se estructura el software. A
+            continuación, algunos de los estilos más utilizados y cómo
+            funcionan:
             <br />
-            <b>Arquitectura por capas</b>
+            <b>Arquitectura por capas:</b> Esta arquitectura corrige los
+            problemas de la arquitectura "spaghetti" al separar el software en
+            capas que trabajan de manera conjunta. Cada capa cumple una función
+            específica, como la visualización de datos o el acceso a la base de
+            datos.
             <br />
-            Esta arquitectura nacio para corregir los problemas que ocasionaba
-            su antecesora la arquitectura spaghetti que como no era una
-            arquitectura pero fueron los incios de lo que hoy como los planos de
-            arquitectura. la arquitectura de capas esta formada por varias capas
-            que cumplen una función especifica pero trabajan en conjunto,
-            algunas de estas capas son, visualización de datos, acceso a la base
-            de datos, etc.
+            <b>Arquitectura hexagonal:</b> Aísla la lógica interna del software
+            permitiendo la modificación de componentes sin afectar otros,
+            mejorando la eficiencia y escalabilidad.
             <br />
-            <b>Arquitectura hexagonal</b>
+            <b>Arquitectura MVC (Model-View-Controller):</b> Separa el software
+            en Modelo, Vista y Controlador. El Modelo representa los datos, la
+            Vista los presenta al usuario, y el Controlador conecta ambos,
+            procesando las solicitudes.
             <br />
-            Esta arquitectura se centra en aislar la lógica interna del
-            softaware, haciendo que haya componentes independientes que pueden
-            ser modificados sin generarle problema a otros componentes y que el
-            software funcione de manera eficiente, de mejor rendimiento y sea
-            escalable.
-            <br />
-            <b>Arquitectura MVC(Model-View-Controller)</b>
-            <br />
-            Esta arquitectura separa el software en tres secciones modelo, vista
-            y controlador
-            <br />
-            Modelo
-            <br />
-            Representa los datos y la lógica de negocio del sistema.
-            <br />
-            Vista
-            <br />
-            La vista presenta los datos al usuario, muestra la información de la
-            aplicación, esta se diseña de forma que sus partes se han
-            independientes y no afecte los datos subyacentes.
-            <br />
-            Controlador
-            <br />
-            Es aquel que hace la conexión entre la vista y el modelo, procesando
-            las solicitudes para posteriormente realizar operaciones en el
-            modelo y decidir qué vista es la que se mostrará con la información.
-            <br />
-            <b>Arquitectura de microservicios</b>
-            <br />
-            La arquitectura de microservicios se usa en el desarrollo de
-            aplicaciones que son complejas, diviendo en varios microservicios
-            que operan de manera independiente y autonoma unos de otros, siendo
-            posible que cada uno se pueda desarrollar, desplegar y escalar de
-            manera independiente.
+            <b>Arquitectura de microservicios:</b> Divide aplicaciones complejas
+            en microservicios independientes, facilitando el desarrollo,
+            despliegue y escalabilidad autónoma.
           </p>
         </article>
-        <div class="flex">
+
+        <div class="flex flex-col md:flex-row mt-4">
           <article
-            class="bg-gray-300 w-1/2 flex items-center justify-center p-4"
+            class="basis-1/2 md:basis-full flex items-center justify-center p-4 wow animate__animated animate__fadeInLeft"
           >
             <img
-              width="500px"
               src="../multimedia/Estilos_arquitectonicos.jpeg"
-              alt="Estilos_arquitectonicos_arquitectura_de_software"
+              alt="Estilos arquitectónicos arquitectura de software"
             />
           </article>
 
           <article
-            class="bg-gray-400 w-1/2 flex flex-col items-center justify-center p-4"
+            class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-300 rounded-lg mt-4 text-emerald-950 wow animate__animated animate__fadeInLeft"
           >
-            <h2 class="text-xl"><b>Usabilidad</b></h2>
-            Se usan en aplicaciones escalables y que necesitan una alta
-            disponibilidad y despliegue independiente, tambien los podemos ver
-            en sistemas con responsabilidades bien definidas y escalabilidad
-            vertical.
+            <h2 class="text-xl font-bold text-emerald-950">Usabilidad</h2>
+            <p>
+              Estos estilos arquitectónicos se aplican en sistemas escalables y
+              de alta disponibilidad, donde el despliegue y las
+              responsabilidades deben ser independientes.
+            </p>
           </article>
         </div>
       </section>
     </main>
-    <footer>© 2024 Taller de Arquitectura de Software Uniremington</footer>
+    <footer class="text-center text-white py-4">
+      © 2024 Taller de Arquitectura de Software Uniremington
+    </footer>
   </body>
 </html>
