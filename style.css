@@ -46,12 +46,3 @@ p {
 .btn:hover {
   background-color: #9ca3af;
 }
-
-footer {
-  font-size: 1.75rem;
-  font-weight: 500;
-  background-color: rgb(2 44 34);
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
