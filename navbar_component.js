@@ -14,7 +14,7 @@ class CustomNavbar extends HTMLElement {
     // Crear el contenedor del navbar
     const navContainer = document.createElement("div");
     navContainer.innerHTML = `
-      <nav class="bg-emerald-950 p-4">
+      <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
           <a href="/Arquitectura-Software/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
           <div class="hidden md:flex space-x-6">
@@ -101,6 +101,7 @@ class CustomNavbar extends HTMLElement {
       .scrollable-dropdown {
         max-height: 100px;
         overflow-y: auto;
+        overflow-x: hidden;
       }
 
       .scrollable-dropdown::-webkit-scrollbar {
