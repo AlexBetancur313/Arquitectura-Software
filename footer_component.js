@@ -4,7 +4,7 @@ class CustomFooter extends HTMLElement {
     const shadow = this.attachShadow({ mode: "open" });
 
     const footer = document.createElement("footer");
-    footer.innerHTML = `© 2025 Taller de Arquitectura de Software Uniremington`;
+    footer.innerHTML = `© 2024 Taller de Arquitectura de Software Uniremington`;
 
     footer.style.fontSize = "1.75rem";
     footer.style.fontWeight = "500";
