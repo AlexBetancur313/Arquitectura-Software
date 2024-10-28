@@ -12,7 +12,6 @@ class CustomFooter extends HTMLElement {
     footer.style.padding = "10px";
     footer.style.textAlign = "center";
     footer.style.color = "white";
-
     shadow.appendChild(footer);
   }
 }
