@@ -16,12 +16,12 @@ class CustomNavbar extends HTMLElement {
     navContainer.innerHTML = `
       <nav class="bg-emerald-950 p-4">
         <div class="container mx-auto flex justify-between items-center">
-          <a href="#" class="text-white text-xl font-bold">Arquitectura de Software</a>
+          <a href="/Arquitectura-Software/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
           <div class="hidden md:flex space-x-6">
             <!-- Dropdown Section -->
             <div class="relative">
-              <button id="dropdownBtn" class="text-gray-300 hover:text-white">Clase 1</button>
-              <div id="dropdownMenu" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <button id="dropdownBtnClase1" class="text-gray-300 hover:text-white">Clase 1</button>
+              <div id="dropdownMenuClase1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
                 <a href="/Arquitectura-Software/clase1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
                 <a href="/Arquitectura-Software/clase1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
                 <a href="/Arquitectura-Software/clase1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
@@ -32,12 +32,21 @@ class CustomNavbar extends HTMLElement {
                 <a href="/Arquitectura-Software/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
               </div>
             </div>
-            <div>
-            <button id="dropdownBtn" class="text-gray-300 hover:text-white">Clase 2</button>
-            <a href="clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
+              <div class="relative">
+                <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 2</button>
+                <div id="dropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/Arquitectura-Software/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+                </div>
+              </div>
+              <div class="relative">
+           <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 3</button>
+           </div>
+           <div class="relative">
+            <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
             </div>
-            <a href="#" class="text-gray-300 hover:text-white">About</a>
-            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            <a href="/Arquitectura-Software/index.html" class="hover:bg-white-700 text-white font-bold rounded">
+        <img width="30px" src="/Arquitectura-Software/multimedia/Home.png" alt="Icono de regreso" />
+      </a>
           </div>
 
           <!-- Mobile menu button -->
@@ -53,8 +62,8 @@ class CustomNavbar extends HTMLElement {
           <div class="p-2 space-y-2">
             <!-- Dropdown for mobile -->
             <div>
-              <button id="mobileDropdownBtn" class="block text-gray-300 hover:text-white w-full text-left">Clase 1</button>
-              <div id="mobileDropdownMenu" class="hidden bg-emerald-900 rounded-lg">
+              <button id="mobileDropdownBtnClase1" class="block text-gray-300 hover:text-white w-full text-left">Clase 1</button>
+              <div id="mobileDropdownMenuClase1" class="hidden bg-emerald-900 rounded-lg">
                 <a href="/Arquitectura-Software/clase1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
                 <a href="/Arquitectura-Software/clase1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
                 <a href="/Arquitectura-Software/clase1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
@@ -65,13 +74,44 @@ class CustomNavbar extends HTMLElement {
                 <a href="/Arquitectura-Software/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Evolución y Mantenimiento</a>
               </div>
             </div>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Clase 2</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+            <div class="relative">
+                <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 2</button>
+                <div id="mobileDropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/Arquitectura-Software/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+                </div>
+              </div>
+              <div class="relative">
+            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 3</button>
+            </div>
+            <div class="relative">
+            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
+            </div>
+            <a href="/Arquitectura-Software/index.html" class="hover:bg-white-700 text-white font-bold py-2 px-4 rounded">
+        <img width="25px" src="/Arquitectura-Software/multimedia/Home.png" alt="Icono de regreso" />
+      </a>
           </div>
         </div>
       </nav>
     `;
+    shadow.appendChild(navContainer);
+
+    // Estilos para el scroll
+    const style = document.createElement("style");
+    style.textContent = `
+      .scrollable-dropdown {
+        max-height: 100px;
+        overflow-y: auto;
+      }
+
+      .scrollable-dropdown::-webkit-scrollbar {
+        width: 6px;
+      }
+      .scrollable-dropdown::-webkit-scrollbar-thumb {
+        background-color: #4CAF50;
+        border-radius: 10px;
+      }
+    `;
+    shadow.appendChild(style);
 
     // Adjuntar el contenedor de navegación al Shadow DOM
     shadow.appendChild(navContainer);
@@ -83,10 +123,18 @@ class CustomNavbar extends HTMLElement {
   addEventListeners() {
     // Toggle dropdown for desktop
     this.shadowRoot
-      .getElementById("dropdownBtn")
+      .getElementById("dropdownBtnClase1")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("dropdownMenu")
+          .getElementById("dropdownMenuClase1")
+          .classList.toggle("hidden");
+      });
+
+    this.shadowRoot
+      .getElementById("dropdownBtnClase2")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("dropdownMenuClase2")
           .classList.toggle("hidden");
       });
 
@@ -97,10 +145,18 @@ class CustomNavbar extends HTMLElement {
 
     // Toggle dropdown for mobile
     this.shadowRoot
-      .getElementById("mobileDropdownBtn")
+      .getElementById("mobileDropdownBtnClase1")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("mobileDropdownMenu")
+          .getElementById("mobileDropdownMenuClase1")
+          .classList.toggle("hidden");
+      });
+
+    this.shadowRoot
+      .getElementById("mobileDropdownBtnClase2")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("mobileDropdownMenuClase2")
           .classList.toggle("hidden");
       });
   }
