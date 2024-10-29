@@ -44,9 +44,6 @@ class CustomNavbar extends HTMLElement {
            <div class="relative">
             <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
             </div>
-            <a href="/Arquitectura-Software/index.html" class="hover:bg-white-700 text-white font-bold rounded">
-        <img width="30px" src="/Arquitectura-Software/multimedia/Home.png" alt="Icono de regreso" />
-      </a>
           </div>
 
           <!-- Mobile menu button -->
@@ -86,9 +83,6 @@ class CustomNavbar extends HTMLElement {
             <div class="relative">
             <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
             </div>
-            <a href="/Arquitectura-Software/index.html" class="hover:bg-white-700 text-white font-bold py-2 px-4 rounded">
-        <img width="25px" src="/Arquitectura-Software/multimedia/Home.png" alt="Icono de regreso" />
-      </a>
           </div>
         </div>
       </nav>
