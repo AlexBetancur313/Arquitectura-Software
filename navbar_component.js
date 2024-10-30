@@ -16,30 +16,30 @@ class CustomNavbar extends HTMLElement {
     navContainer.innerHTML = `
       <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
-          <a href="/Arquitectura-Software/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
+          <a href="/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
           <div class="hidden md:flex space-x-6">
             <!-- Dropdown Section -->
             <div class="relative">
-              <button id="dropdownBtnClase1" class="text-gray-300 hover:text-white">Clase 1</button>
+              <button id="dropdownBtnClase1" class="text-gray-300 hover:text-white">Introducción</button>
               <div id="dropdownMenuClase1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
-                <a href="/Arquitectura-Software/clase1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
-                <a href="/Arquitectura-Software/clase1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
-                <a href="/Arquitectura-Software/clase1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
-                <a href="/Arquitectura-Software/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 w-32 hover:bg-green-600">Estilos Arquitectónicos</a>
-                <a href="/Arquitectura-Software/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 w-32 hover:bg-green-600">Requisitos no Funcionales</a>
-                <a href="/Arquitectura-Software/clase1/tecnologias_herramientas.html" class="block px-4 py-2 w-32 hover:bg-green-600">Tecnologías y Herramientas</a>
-                <a href="/Arquitectura-Software/clase1/documentacion.html" class="block px-4 py-2 w-32 hover:bg-green-600">Documentación</a>
-                <a href="/Arquitectura-Software/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
+                <a href="/clase1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
+                <a href="/clase1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
+                <a href="/clase1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
+                <a href="/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 w-32 hover:bg-green-600">Estilos Arquitectónicos</a>
+                <a href="/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 w-32 hover:bg-green-600">Requisitos no Funcionales</a>
+                <a href="/clase1/tecnologias_herramientas.html" class="block px-4 py-2 w-32 hover:bg-green-600">Tecnologías y Herramientas</a>
+                <a href="/clase1/documentacion.html" class="block px-4 py-2 w-32 hover:bg-green-600">Documentación</a>
+                <a href="/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
               </div>
             </div>
               <div class="relative">
-                <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 2</button>
+                <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Entorno digital</button>
                 <div id="dropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
-              <a href="/Arquitectura-Software/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+              <a href="/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
-           <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 3</button>
+           <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
            </div>
            <div class="relative">
             <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
@@ -59,26 +59,26 @@ class CustomNavbar extends HTMLElement {
           <div class="p-2 space-y-2">
             <!-- Dropdown for mobile -->
             <div>
-              <button id="mobileDropdownBtnClase1" class="block text-gray-300 hover:text-white w-full text-left">Clase 1</button>
+              <button id="mobileDropdownBtnClase1" class="block text-gray-300 hover:text-white w-full text-left">Introducción</button>
               <div id="mobileDropdownMenuClase1" class="hidden bg-emerald-900 rounded-lg">
-                <a href="/Arquitectura-Software/clase1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
-                <a href="/Arquitectura-Software/clase1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
-                <a href="/Arquitectura-Software/clase1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
-                <a href="/Arquitectura-Software/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Estilos Arquitectónicos</a>
-                <a href="/Arquitectura-Software/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Requisitos no Funcionales</a>
-                <a href="/Arquitectura-Software/clase1/tecnologias_herramientas.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Tecnologías y Herramientas</a>
-                <a href="/Arquitectura-Software/clase1/documentacion.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Documentación</a>
-                <a href="/Arquitectura-Software/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Evolución y Mantenimiento</a>
+                <a href="/clase1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
+                <a href="/clase1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
+                <a href="/clase1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
+                <a href="/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Estilos Arquitectónicos</a>
+                <a href="/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Requisitos no Funcionales</a>
+                <a href="/clase1/tecnologias_herramientas.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Tecnologías y Herramientas</a>
+                <a href="/clase1/documentacion.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Documentación</a>
+                <a href="/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Evolución y Mantenimiento</a>
               </div>
             </div>
             <div class="relative">
-                <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 2</button>
+                <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Entorno digital</button>
                 <div id="mobileDropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
-              <a href="/Arquitectura-Software/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+              <a href="/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
-            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 3</button>
+            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
             </div>
             <div class="relative">
             <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
