@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Tecnologías y Herramientas</title>
+    <title>Documentación</title>
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
@@ -17,19 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <script src="../navbar_component.js"></script>
+    <script src="../componentes/navbar_component.js"></script>
   </head>
   <body class="bg-emerald-950">
     <custom-navbar></custom-navbar>
     <header class="header">
-      <h1 class="header-title">Tecnologías y Herramientas</h1>
-    </header>
+      <h1 class="header-title">Documentación</h1>
+    </header> 
     <main class="m-4">
       <section class="flex flex-col w-3/4 m-auto mt-4 md:w-full">
         <article class="p-4 bg-gray-300 rounded-lg">
           <h2 class="text-2xl text-center font-bold">Descripción</h2>
           <p class="mt-4 p-10">
-            Cuando se va a iniciar con un nuevo proyecto o sistema, es sumamente importante saber cuales seran las herramientas y tecnologias con las que se van a trabajar, esto permite que desde un inicio se pueda tener un mayor control, porque dependiendo del proyecto se usa un lenguaje u otro, ya que no todos los lenguajes son igual de eficientes para todas las tareas, cada uno tiene su punto fuerte y si lo sabemos aprovechar desde un inicio, el proyecto puede ser de mejor calidad, escalabilidad, rendimiento y mantenimiento.
+            La documentación es crucial en cualquier proyecto, ya que permite describir y comunicar la arquitectura, el diseño y las decisiones técnicas a todos los involucrados, incluyendo desarrolladores, gerentes de proyectos y clientes. La documentación es importante para el entendimiento del sistema y para el entendimiento de personas externas que no estuvieron desde el inicio en la creación del sistema. 
           </p>
         </article>
 
@@ -37,29 +37,29 @@
           <article
             class="basis-1/2 md:basis-full flex items-center justify-center p-4"
           >
-            <img
-              src="../multimedia/tecnologias y herramientas.png"
-              alt="Tecnologias y Herramientas"
+            <img class
+              src="../multimedia/documentacion.jpeg"
+              alt="Documentación"
             />
           </article>
 
           <article
-            class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-300 rounded-lg mt-4 text-emerald-950"
+             class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-300 rounded-lg mt-4 text-emerald-950"
           >
             <h2 class="text-xl text-emerald-950">Ejemplos</h2>
             <p>
               <ol>
-                <li><b>Lenguajes de Programación:</b> Python, Java, Javascript, C++, Php, etc.</li>
-                <li><b>Bases de Datos:</b> MySQL, PostgreSQL, Oracle, MongoDB, etc. </li>
-                <li><b>Frameworks:</b> React, Angular, Django,Springboot, Laravel, etc</li>
-                <li><b>Herramientas:</b> Git, GitHub, Jenkins, Docker, PyTest, VS Code, etc.</li>
+                <li><b>Diagramas:</b> Muestran la estructura del sistema, las relaciones entre los componentes y el flujo de datos o procesos.</li>
+                <li><b>Descripciones de componentes:</b> Detallan cada parte del sistema, sus funciones y cómo interactúan con otros componentes. </li>
+                <li><b>Interfaces:</b> Describen los puntos de interacción entre los diferentes módulos, servicios o sistemas externos.</li>
+                <li><b>Decisiones clave de diseño:</b> xplican por qué se eligieron ciertas tecnologías, patrones o arquitecturas, y cómo afectan al proyecto.</li>
               </ol>
             </p>
           </article>
         </div>
       </section>
     </main>
-    <script src="../footer_component.js"></script>
+    <script src="../componentes/footer_component.js"></script>
     <custom-footer></custom-footer>
   </body>
 </html>
