@@ -8,10 +8,9 @@ class CustomNavbar extends HTMLElement {
     link.setAttribute(
       "href",
       "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    ); // URL o ruta a tu archivo de Tailwind CSS
+    );
     shadow.appendChild(link);
 
-    // Crear el contenedor del navbar
     const navContainer = document.createElement("div");
     navContainer.innerHTML = `
       <nav class="bg-gray-900 p-4">
@@ -89,7 +88,6 @@ class CustomNavbar extends HTMLElement {
     `;
     shadow.appendChild(navContainer);
 
-    // Estilos para el scroll
     const style = document.createElement("style");
     style.textContent = `
       .scrollable-dropdown {
