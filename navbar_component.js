@@ -20,29 +20,29 @@ class CustomNavbar extends HTMLElement {
           <div class="hidden md:flex space-x-6">
             <!-- Dropdown Section -->
             <div class="relative">
-              <button id="dropdownBtnClase1" class="text-gray-300 hover:text-white">Introducción</button>
-              <div id="dropdownMenuClase1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
-                <a href="/clase1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
-                <a href="/clase1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
-                <a href="/clase1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
-                <a href="/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 w-32 hover:bg-green-600">Estilos Arquitectónicos</a>
-                <a href="/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 w-32 hover:bg-green-600">Requisitos no Funcionales</a>
-                <a href="/clase1/tecnologias_herramientas.html" class="block px-4 py-2 w-32 hover:bg-green-600">Tecnologías y Herramientas</a>
-                <a href="/clase1/documentacion.html" class="block px-4 py-2 w-32 hover:bg-green-600">Documentación</a>
-                <a href="/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
+              <button id="dropdownBtnsemana1" class="text-gray-300 hover:text-white">Introducción</button>
+              <div id="dropdownMenusemana1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
+                <a href="/semana1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
+                <a href="/semana1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
+                <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
+                <a href="/semana1/estilos_arquitectonicos.html" class="block px-4 py-2 w-32 hover:bg-green-600">Estilos Arquitectónicos</a>
+                <a href="/semana1/requisitos_no_funcionales.html" class="block px-4 py-2 w-32 hover:bg-green-600">Requisitos no Funcionales</a>
+                <a href="/semana1/tecnologias_herramientas.html" class="block px-4 py-2 w-32 hover:bg-green-600">Tecnologías y Herramientas</a>
+                <a href="/semana1/documentacion.html" class="block px-4 py-2 w-32 hover:bg-green-600">Documentación</a>
+                <a href="/semana1/evolucion_mantenimiento.html" class="block px-4 py-2 w-32 hover:bg-green-600">Evolución y Mantenimiento</a>
               </div>
             </div>
               <div class="relative">
-                <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Entorno digital</button>
-                <div id="dropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
-              <a href="/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+                <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Entorno digital</button>
+                <div id="dropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
-           <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+           <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
            </div>
            <div class="relative">
-            <button id="dropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
             </div>
           </div>
 
@@ -59,29 +59,29 @@ class CustomNavbar extends HTMLElement {
           <div class="p-2 space-y-2">
             <!-- Dropdown for mobile -->
             <div>
-              <button id="mobileDropdownBtnClase1" class="block text-gray-300 hover:text-white w-full text-left">Introducción</button>
-              <div id="mobileDropdownMenuClase1" class="hidden bg-emerald-900 rounded-lg">
-                <a href="/clase1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
-                <a href="/clase1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
-                <a href="/clase1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
-                <a href="/clase1/estilos_arquitectonicos.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Estilos Arquitectónicos</a>
-                <a href="/clase1/requisitos_no_funcionales.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Requisitos no Funcionales</a>
-                <a href="/clase1/tecnologias_herramientas.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Tecnologías y Herramientas</a>
-                <a href="/clase1/documentacion.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Documentación</a>
-                <a href="/clase1/evolucion_mantenimiento.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Evolución y Mantenimiento</a>
+              <button id="mobileDropdownBtnsemana1" class="block text-gray-300 hover:text-white w-full text-left">Introducción</button>
+              <div id="mobileDropdownMenusemana1" class="hidden bg-emerald-900 rounded-lg">
+                <a href="/semana1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
+                <a href="/semana1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
+                <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
+                <a href="/semana1/estilos_arquitectonicos.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Estilos Arquitectónicos</a>
+                <a href="/semana1/requisitos_no_funcionales.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Requisitos no Funcionales</a>
+                <a href="/semana1/tecnologias_herramientas.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Tecnologías y Herramientas</a>
+                <a href="/semana1/documentacion.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Documentación</a>
+                <a href="/semana1/evolucion_mantenimiento.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Evolución y Mantenimiento</a>
               </div>
             </div>
             <div class="relative">
-                <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Entorno digital</button>
-                <div id="mobileDropdownMenuClase2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
-              <a href="/clase2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
+                <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Entorno digital</button>
+                <div id="mobileDropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
-            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
             </div>
             <div class="relative">
-            <button id="mobileDropdownBtnClase2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
             </div>
           </div>
         </div>
@@ -118,18 +118,18 @@ class CustomNavbar extends HTMLElement {
   addEventListeners() {
     // Toggle dropdown for desktop
     this.shadowRoot
-      .getElementById("dropdownBtnClase1")
+      .getElementById("dropdownBtnsemana1")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("dropdownMenuClase1")
+          .getElementById("dropdownMenusemana1")
           .classList.toggle("hidden");
       });
 
     this.shadowRoot
-      .getElementById("dropdownBtnClase2")
+      .getElementById("dropdownBtnsemana2")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("dropdownMenuClase2")
+          .getElementById("dropdownMenusemana2")
           .classList.toggle("hidden");
       });
 
@@ -140,18 +140,18 @@ class CustomNavbar extends HTMLElement {
 
     // Toggle dropdown for mobile
     this.shadowRoot
-      .getElementById("mobileDropdownBtnClase1")
+      .getElementById("mobileDropdownBtnsemana1")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("mobileDropdownMenuClase1")
+          .getElementById("mobileDropdownMenusemana1")
           .classList.toggle("hidden");
       });
 
     this.shadowRoot
-      .getElementById("mobileDropdownBtnClase2")
+      .getElementById("mobileDropdownBtnsemana2")
       .addEventListener("click", () => {
         this.shadowRoot
-          .getElementById("mobileDropdownMenuClase2")
+          .getElementById("mobileDropdownMenusemana2")
           .classList.toggle("hidden");
       });
   }
