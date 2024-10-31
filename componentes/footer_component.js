@@ -8,7 +8,7 @@ class CustomFooter extends HTMLElement {
 
     footer.style.fontSize = "1.75rem";
     footer.style.fontWeight = "500";
-    footer.style.backgroundColor = "rgb(2, 44, 34)";
+    footer.style.backgroundColor = "rgb(31 41 55)";
     footer.style.padding = "10px";
     footer.style.textAlign = "center";
     footer.style.color = "white";

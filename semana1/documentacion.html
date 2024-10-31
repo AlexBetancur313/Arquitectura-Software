@@ -19,14 +19,14 @@
     />
     <script src="../componentes/navbar_component.js"></script>
   </head>
-  <body class="bg-emerald-950">
+  <body class="bg-gray-200">
     <custom-navbar></custom-navbar>
     <header class="header">
       <h1 class="header-title">Documentación</h1>
     </header> 
-    <main class="m-4">
-      <section class="flex flex-col w-3/4 m-auto mt-4 md:w-full">
-        <article class="p-4 bg-gray-300 rounded-lg">
+    <main class="m-4 w-3/4 m-auto">
+      <section class="flex flex-col m-auto mt-4 md:w-full">
+        <article class="p-4 bg-gray-100 rounded-lg wow animate__animated animate__fadeInLeft">
           <h2 class="text-2xl text-center font-bold">Descripción</h2>
           <p class="mt-4 p-10">
             La documentación es crucial en cualquier proyecto, ya que permite describir y comunicar la arquitectura, el diseño y las decisiones técnicas a todos los involucrados, incluyendo desarrolladores, gerentes de proyectos y clientes. La documentación es importante para el entendimiento del sistema y para el entendimiento de personas externas que no estuvieron desde el inicio en la creación del sistema. 
@@ -35,7 +35,7 @@
 
         <div class="flex flex-col md:flex-row">
           <article
-            class="basis-1/2 md:basis-full flex items-center justify-center p-4"
+            class="basis-1/2 md:basis-full flex items-center justify-center p-4 wow animate__animated animate__fadeInLeft"
           >
             <img class
               src="../multimedia/documentacion.jpeg"
@@ -44,9 +44,9 @@
           </article>
 
           <article
-             class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-300 rounded-lg mt-4 text-emerald-950"
+             class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg mt-4 text-black wow animate__animated animate__fadeInLeft"
           >
-            <h2 class="text-xl text-emerald-950">Ejemplos</h2>
+            <h2 class="text-xl text-black">Ejemplos</h2>
             <p>
               <ol>
                 <li><b>Diagramas:</b> Muestran la estructura del sistema, las relaciones entre los componentes y el flujo de datos o procesos.</li>
@@ -59,6 +59,7 @@
         </div>
       </section>
     </main>
+    <br>
     <script src="../componentes/footer_component.js"></script>
     <custom-footer></custom-footer>
   </body>
