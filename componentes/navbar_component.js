@@ -44,7 +44,7 @@ class CustomNavbar extends HTMLElement {
                 </div>
            </div>
            <div class="relative">
-            <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Semana 4</button>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ class CustomNavbar extends HTMLElement {
                 </div>
             </div>
             <div class="relative">
-            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Semana 4</button>
             </div>
           </div>
         </div>
