@@ -38,7 +38,10 @@ class CustomNavbar extends HTMLElement {
                 </div>
               </div>
               <div class="relative">
-           <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+           <button id="dropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+           <div id="dropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana3/ciclo_de_vida_automatización.html" class="block px-4 py-2 w-32 hover:bg-green-600">Ciclo de vida</a>
+                </div>
            </div>
            <div class="relative">
             <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
@@ -77,7 +80,10 @@ class CustomNavbar extends HTMLElement {
                 </div>
               </div>
               <div class="relative">
-            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+            <button id="mobileDropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
+            <div id="dropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana3/ciclo_de_vida_automatización.html" class="block px-4 py-2 w-32 hover:bg-green-600">Ciclo de vida</a>
+                </div>
             </div>
             <div class="relative">
             <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
@@ -130,6 +136,13 @@ class CustomNavbar extends HTMLElement {
           .getElementById("dropdownMenusemana2")
           .classList.toggle("hidden");
       });
+    this.shadowRoot
+      .getElementById("dropdownBtnsemana3")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("dropdownMenusemana3")
+          .classList.toggle("hidden");
+      });
 
     // Toggle mobile menu
     this.shadowRoot.getElementById("menuBtn").addEventListener("click", () => {
@@ -150,6 +163,14 @@ class CustomNavbar extends HTMLElement {
       .addEventListener("click", () => {
         this.shadowRoot
           .getElementById("mobileDropdownMenusemana2")
+          .classList.toggle("hidden");
+      });
+
+    this.shadowRoot
+      .getElementById("mobileDropdownBtnsemana3")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("mobileDropdownMenusemana3")
           .classList.toggle("hidden");
       });
   }

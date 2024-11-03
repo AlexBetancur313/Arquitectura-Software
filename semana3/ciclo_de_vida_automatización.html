@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Componentes</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../componentes/navbar_component.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <custom-navbar></custom-navbar>
+    <header class="header">
+      <h1 class="header-title">Ciclo de vida del software</h1>
+    </header>
+    <main class="m-4 w-3/4 m-auto">
+      <section class="flex flex-col m-auto mt-4 md:w-full">
+        <article
+          class="p-4 bg-gray-100 rounded-lg wow animate__animated animate__fadeInLeft"
+        >
+          <p class="mt-4 p-10">
+            <h2 class="text-2xl text-center font-bold">Problemática</h2>
+            Se evidencio que en el area administrativa de las empresas hay
+            procesos y tareas que son muy repetitivas en el día a día, lo que
+            ocasiona que los empleados del area no se puedan en enfocar en otro
+            tipo de tareas que pueden ayudar mucho mas a la empresa, esto se
+            debe a que las empresas no cuentan con un sistema que pueda
+            automatizar dichas tareas para que los empleados puedan enfocarse en
+            otros procesos.
+            <br />
+            <br />
+            <h2 class="text-2xl text-center font-bold">Análisis de requerimientos</h2>
+            El análisis de requerimientos se hará por medio de técnicas que nos ayuden a comprender las características que puedan satisfacer el software y darle solución a la problemática evidenciada, algunas de estas técnicas que se emplearan para recaudar esta información son entrevistas con el cliente para lograr entender de manera adecuada su necesidad, observaciones e indagaciones de los procesos o tareas repetitivas que se llevan a cabo en el área administrativa que nos puedan ayudar a entender cómo se le puede llegar a dar solución de manera eficiente mejorando estos procesos. Con este tipo de técnicas se espera poder obtener todas estas características que nos permitan poder desarrollar el software y que se satisfaga las necesidades evidenciadas dándole así una solución adecuada. 
+            <br />
+            <br>
+            <h2 class="text-2xl text-center font-bold">Planificación</h2>
+            Ya teniendo las características e información necesaria para resolver la problemática en los procesos administrativos, se pasará a mirar las herramientas y recursos que serán necesarios para el desarrollo del software, en este caso la implementación de un sistema que automatice las tareas repetitivas del área administrativa. Se repartirán los trabajos, los plazos y las métricas seleccionadas para empezar con el desarrollo, esto acompañado de un cronograma en el cual se detalle las actividades que se irán haciendo a lo largo del desarrollo, con su respectiva fecha de entrega, los posibles riesgos que puedan aparecer durante el avance en las diferentes actividades previstas en el cronograma, con su respectiva solución a dichos riesgos. 
+            <br />
+            <br>
+            <h2 class="text-2xl text-center font-bold">Diseño del sistema</h2>
+            Con los requisitos identificados y una planificación ya elaborada pasamos a elaborar una arquitectura enfocada a la automatización donde podamos ver las plataformas y herramientas que se utilizaran en el desarrollo, algunas de estas plataformas que nos pueden ayudar son firebase, back4app, heroku, entre otras, también se debe evidenciar que se hagan diagramas de flujo, estructuración de la base de datos, prototipos de la interfaz de usuarios y documentación del diseño del software con todo esto nos aseguraremos de que el avance del software vaya en un buen camino durante su tiempo desarrollo y al final se pueda entregar un producto que sea intuitivo y fácil de entender para el personal administrativo.
+            <br />
+            <br> 
+            <h2 class="text-2xl text-center font-bold">Implementación o desarrollo</h2>
+            Con el diseño hecho y aprobado se empieza a trabajar en la codificación del sistema donde se hará la personalización y los diferentes módulos que tendrán los procesos que ayudarán en la automatización de las diferentes tareas en el área administrativa, también se harán pruebas unitarias del software y los diferentes módulos, para verificar que funcionen correctamente sin ningún problema, revisando que cumplan con los objetivos propuestos.
+            <br>
+            <br>
+            <h2 class="text-2xl text-center font-bold">Pruebas</h2>
+            Las pruebas en el proyecto de automatización de los procesos administrativos se deben realizar con el fin de poder asegurar que el funcionamiento sea el correcto, lo que se busca con esto es que sea totalmente funcional y además de esto que sea un proceso que corra de manera fluida, ya que en el desarrollo de esto pueden surgir diferentes dificultades por lo tanto esta parte es vital para el correcto desarrollo del sistema.
+            <br>
+            <br>
+Se realizarán 4 tipos de pruebas diferentes, cada una con un fin especifico: 
+Pruebas Funcionales: Este tipo de pruebas serán para garantizar que la aplicación funcione de manera correcta, que cada uno de los componentes que tiene estén generando los resultados esperados que se dan desde los requisitos iniciales. Resultados de los casos de prueba exitosos o con errores para cada funcionalidad individual.
+<br>
+<br>
+Pruebas de integración: Verificar que la integración o unión entre cada uno de los módulos o componentes que tiene la aplicación se adapten correctamente y que no generen ningún tipo de inconsistencia en los datos. Se debe asegurar la conexión a la base de datos y la integración a los sistemas administrativos que maneje la empresa.
+<br>
+<br>
+Pruebas de sistema: Simulan condiciones reales de uso para asegurar que el sistema completo funcione adecuadamente bajo diferentes escenarios, tanto de mucho estrés como de poco, variaciones en la carga de trabajo o interrupciones en el servicio.
+<br>
+<br>
+Pruebas de Aceptación: Estas pruebas de realizan con el usuario final para poder tener un feedback de lo que se pueda mejorar y que los resultados y funcionamiento sea el esperado para poder realizar su función de manera correcta. Se documenta el nivel de satisfacción del usuario y posibles mejorar al sistema.
+<br>
+<br>
+<h2 class="text-2xl text-center font-bold">Despliegue </h2>
+Esta es la etapa final del proyecto donde se realiza la entrega del aplicativo, para un correcto despliegue de debe realizar una preparación del entorno donde se cumplan todos los requisitos técnicos para el funcionamiento adecuado de este, esto puede ser versiones del software, compatibilidad del sistema, configuraciones del seguridad y manejo de servidores, sea físico o en la nube. Luego de realizar las validaciones correspondientes se pasa a realizar la instalación y configuración y listo para usar.
+<br>
+<br>
+La capacitación al usuario es una de las partes más importantes ya que, aunque se busque la automatización de los procesos, las personas siempre van a estar implicadas y serán las responsables del correcto uso y manejo, se garantiza que los usuarios del sistema cuenten con el conocimiento suficiente. La documentación también es parte del despliegue de la aplicación ya que se entregarán los manuales y documentos de soporte técnico en caso de que se genere algún error o inconveniente se pueda revisar y darle una fácil solución.
+<br>
+<br>
+<h2 class="text-2xl text-center font-bold">Mantenimiento y soporte</h2>
+Luego que el proyecto se finalice se debe dar una un mantenimiento frecuente y soporte, esto es crucial ya que las tecnologías van avanzando y se van creando nuevos cambios que pueden mejorar el rendimiento de este, además al ser un software que busca la automatización va a depender de otros programas los cuales al igual que este se van a estar actualizando constantemente y se deben ir realizando algunos ajustes para que su funcionamiento siga siendo el adecuado. Esta fase es también es la encargada de detectar algunos errores que en la fase de desarrollo no se lograron percibir y se les da una solución de manera frecuente, para que no afecten las actividades diarias de la empresa.
+          </p>
+        </article>
+      </section>
+    </main>
+    <br />
+    <script src="../componentes/footer_component.js"></script>
+    <custom-footer></custom-footer>
+  </body>
+</html>
