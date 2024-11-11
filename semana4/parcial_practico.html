@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Componentes</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../componentes/navbar_component.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <custom-navbar></custom-navbar>
+    <header class="header">
+      <h1 class="header-title">Sitio Web</h1>
+    </header>
+    <main class="m-4 w-3/4 m-auto">
+      <section class="flex flex-col m-auto mt-4 md:w-full">
+        <article
+          class="p-4 bg-gray-100 rounded-lg wow animate__animated animate__fadeInLeft"
+        >
+          <p class="mt-4 p-10">
+            <h2 class="text-2xl text-center font-bold">Analisis de requerimientos</h2>
+            <br>
+            <h3 class="font-bold ">Requisitos funcionales</h3>
+            <br>
+            Los requisitos funcionales en un sitio web serian los que permitan la funcionalidad de la web, como por ejemplo un ecommerce, esto puede llegar a tener múltiples requisitos funcionales con el fin de poder generar ventas. Es importante analizar desde un inicio todas las partes funcionales de un ecommerce porque son los que evitaran fallas o errores en el funcionamiento del sitio.  
+            <br />
+            <br />
+            <h3 class="font-bold">Requisitos no funcionales</h3>
+            <br>
+            Estos requisitos van mas enfocados en la parte de la seguridad y mantenibilidad. En la parte de la seguridad es importante desde un inicio el poder tener un sitio seguro tanto para los usuarios que estarán ingresando como para los empresarios, debido a que el robo de información es un tema bastante delicado y por el lado del mantenimiento este nos va a permitir darle un correcto manejo a través del tiempo, tanto al momento de corregir errores como también poder realizar constantes actualizaciones.
+            <br />
+            <br>
+            <h2 class="text-2xl text-center font-bold">Planificación</h2>
+            <br>
+            <h3 class="font-bold">Planificación de recursos</h3>
+            <br>
+            Analizar los artefactos físicos para la realización del sitio web, esto puede incluir instalaciones, servidores, computadores, internet, etc. Por eso es importante desde un inicio tener en cuenta todo eso para poder tener un entorno de trabajo correcto.
+            <br>
+            <br>
+            <h3 class="font-bold">Cronograma</h3>
+            <br>
+            Utilizar alguna metodología de desarrollo para poder definir tiempos y las tareas que realizara cada desarrollador, para así poder tener mayor orden, en muchos de los casos no se logra cumplir el cronograma, pero si se puede llegar a ser más precisos con esto.
+            <br>
+            <br>
+            <h3 class="font-bold">Manejo de costos</h3>
+            <br>
+            Para el manejo de los costos es importante mantener un margen de error, debido que en grandes proyectos es común que se generen sobre costos debido a imprevistos que se van dando en el transcurso del desarrollo, no se debe manejar un margen de error muy pequeño ya que esto podría llegar a generar perdidas.
+            <br>
+            <br>
+            <h3 class="font-bold">Manejo de riesgos</h3>
+            <br>
+            Para esto de debe contar con un manejo de escenarios desde un inicio donde sea posible adelantarse a posibles circunstancias que pongan en riesgo en proyecto, ya teniendo un posible escenario se puede llegar  a una posible solución antes de que ocurra.
+            <br />
+            <br>
+            <h2 class="text-2xl text-center font-bold">Diseño del sistema</h2>
+            En un inicio un sitio web debe tener 4 pilares muy importantes, que en este caso sería el fronend, el backend, las bases de datos y los servidores, sin alguno de estos el proyecto no esta destinado a tener un buen futuro. Ya enfocados más en el sitio, debe tener un login que permita tener un registro de usuarios, carrito de compras, las diferentes secciones que se manejen, etc. 
+            <br>
+            <br>
+            La fase del diseño es fundamental la correcta eficiencia del sitio, debido que si desde un principio de hace un correcto diseño se va a poder tener un mejor control, se va a poder buscar maneras de optimizar mucho mas el aplicativo, si está en producción se vuelve un trabajo mas complejo, generando mayores gastos uno de los muchos ejemplos puede estar en el diseño de la base de datos donde se manejaran grandes volúmenes de información y por eso se debe hacer lo más optimo posible, también algo que puede parecer no tener mucha relevancia el peso de las imágenes que se van a utilizar ya que si estas son muy pesadas la pagina no cargara lo suficientemente rápido y hará que los usuarios se aburran y busquen otra.
+            <br />
+            <br> 
+            <h2 class="text-2xl text-center font-bold">Pruebas</h2>
+            Las pruebas funcionales son las encargadas de validar que el sistema corra correctamente y adicional a eso que los resultados arrojados sean los correctos. Se podrían realizar también pruebas de navegadores, interactuando como la aplicación trabaja en distintos navegadores, ya que algunos componentes no funcionan igual en algunos exploradores, también pruebas en diferentes dispositivos que nos ayuden a dimensionar como el sitio web funcionara y si lo hará de manera adecuada.
+            <br>
+            Las pruebas de simulación son importantes porque muestran como se manejara la pagina y los servidores en diferentes momentos de estrés, para poder tener un plan de contingencia en caso de que la pagina colapse, aunque lo ideal seria que paulatinamente se le vayan agregando las mejoras adecuadas para no permitir ninguna caída del sistema ya lanzada.
+            <br>
+            <br>
+            <h2 class="text-2xl text-center font-bold">Mantenimiento y soporte</h2>
+            Desde el inicio de debe tener una correcta estructura que permita así poder escalar el proyecto, esto nos va a permitir hacerle diversos cambios permitiendo que el paso por el tiempo sea mayor y que el ciclo de vida sea mas duradero, ya que se podrán realizar constantes cambios.
+            <br>
+            <br>
+            Esto al ser un proyecto en la web es importante que se vaya realizando constantes cambios/mejoras a lo largo del tiempo, ya que las tecnologías cambian y avanzan logrando ser cada vez más eficientes y se le pueden ir integrando tecnologías emergentes como lo puede ser la inteligencia artificial lo que hace más interesante a ojos de los usuarios, manteniendo un interés constante.
+            <br>
+            <br>
+          </p>
+        </article>
+      </section>
+    </main>
+    <br />
+    <script src="../componentes/footer_component.js"></script>
+    <custom-footer></custom-footer>
+  </body>
+</html>

@@ -44,7 +44,10 @@ class CustomNavbar extends HTMLElement {
                 </div>
            </div>
            <div class="relative">
-            <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="dropdownBtnsemana4" class="text-gray-300 hover:text-white">Conceptos generales A.S</button>
+            <div id="dropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana4/parcial_practico.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conceptos generales A.S</a>
+                </div>
             </div>
           </div>
 
@@ -81,12 +84,15 @@ class CustomNavbar extends HTMLElement {
               </div>
               <div class="relative">
             <button id="mobileDropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
-            <div id="dropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+            <div id="mobileDropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
               <a href="/semana3/ciclo_de_vida_automatización.html" class="block px-4 py-2 w-32 hover:bg-green-600">Ciclo de vida</a>
                 </div>
             </div>
             <div class="relative">
-            <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Clase 4</button>
+            <button id="mobileDropdownBtnsemana4" class="text-gray-300 hover:text-white">Conceptos generales A.S</button>
+            <div id="mobileDropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+              <a href="/semana3/parcial_practico.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conceptos generales A.S</a>
+                </div>
             </div>
           </div>
         </div>
@@ -136,11 +142,20 @@ class CustomNavbar extends HTMLElement {
           .getElementById("dropdownMenusemana2")
           .classList.toggle("hidden");
       });
+
     this.shadowRoot
       .getElementById("dropdownBtnsemana3")
       .addEventListener("click", () => {
         this.shadowRoot
           .getElementById("dropdownMenusemana3")
+          .classList.toggle("hidden");
+      });
+
+    this.shadowRoot
+      .getElementById("dropdownBtnsemana4")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("dropdownMenusemana4")
           .classList.toggle("hidden");
       });
 
@@ -171,6 +186,14 @@ class CustomNavbar extends HTMLElement {
       .addEventListener("click", () => {
         this.shadowRoot
           .getElementById("mobileDropdownMenusemana3")
+          .classList.toggle("hidden");
+      });
+
+    this.shadowRoot
+      .getElementById("mobileDropdownBtnsemana4")
+      .addEventListener("click", () => {
+        this.shadowRoot
+          .getElementById("mobileDropdownMenusemana4")
           .classList.toggle("hidden");
       });
   }
