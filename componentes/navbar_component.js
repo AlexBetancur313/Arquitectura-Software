@@ -16,11 +16,11 @@ class CustomNavbar extends HTMLElement {
       <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
           <a href="/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
-          <div class="hidden md:flex space-x-6">
+          <div class="hidden md:flex space-x-6 ">
             <!-- Dropdown Section -->
-            <div class="relative">
+            <div class="relative ">
               <button id="dropdownBtnsemana1" class="text-gray-300 hover:text-white">Introducción</button>
-              <div id="dropdownMenusemana1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
+              <div id="dropdownMenusemana1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg scrollable-dropdown ">
                 <a href="/semana1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
                 <a href="/semana1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
                 <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
@@ -33,19 +33,19 @@ class CustomNavbar extends HTMLElement {
             </div>
               <div class="relative">
                 <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white">Entorno digital</button>
-                <div id="dropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+                <div id="dropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
-           <button id="dropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
-           <div id="dropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+           <button id="dropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida</button>
+           <div id="dropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana3/ciclo_de_vida_automatización.html" class="block px-4 py-2 w-32 hover:bg-green-600">Ciclo de vida</a>
                 </div>
            </div>
            <div class="relative">
             <button id="dropdownBtnsemana4" class="text-gray-300 hover:text-white">Conceptos generales A.S</button>
-            <div id="dropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+            <div id="dropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana4/parcial_practico.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conceptos generales A.S</a>
                 </div>
             </div>
@@ -65,7 +65,7 @@ class CustomNavbar extends HTMLElement {
             <!-- Dropdown for mobile -->
             <div>
               <button id="mobileDropdownBtnsemana1" class="block text-gray-300 hover:text-white w-full text-left">Introducción</button>
-              <div id="mobileDropdownMenusemana1" class="hidden bg-emerald-900 rounded-lg">
+              <div id="mobileDropdownMenusemana1" class="hidden bg-emerald-900 rounded bg-cyan-800-lg">
                 <a href="/semana1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
                 <a href="/semana1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
                 <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
@@ -78,19 +78,19 @@ class CustomNavbar extends HTMLElement {
             </div>
             <div class="relative">
                 <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white">Entorno digital</button>
-                <div id="mobileDropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+                <div id="mobileDropdownMenusemana2" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana2/cuadro_comparativo.html" class="block px-4 py-2 w-32 hover:bg-green-600">Cuadro comparativo</a>
                 </div>
               </div>
               <div class="relative">
             <button id="mobileDropdownBtnsemana3" class="text-gray-300 hover:text-white">Ciclo de vida de la arquitectura de software</button>
-            <div id="mobileDropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+            <div id="mobileDropdownMenusemana3" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana3/ciclo_de_vida_automatización.html" class="block px-4 py-2 w-32 hover:bg-green-600">Ciclo de vida</a>
                 </div>
             </div>
             <div class="relative">
             <button id="mobileDropdownBtnsemana4" class="text-gray-300 hover:text-white">Conceptos generales A.S</button>
-            <div id="mobileDropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg">
+            <div id="mobileDropdownMenusemana4" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg">
               <a href="/semana3/parcial_practico.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conceptos generales A.S</a>
                 </div>
             </div>
@@ -112,9 +112,12 @@ class CustomNavbar extends HTMLElement {
         width: 6px;
       }
       .scrollable-dropdown::-webkit-scrollbar-thumb {
-        background-color: #4CAF50;
+        background-color: rgb(8 51 68);
         border-radius: 10px;
       }
+        .bg-cyan-800{
+          background-color: rgb(21 94 117);
+        }
     `;
     shadow.appendChild(style);
 
