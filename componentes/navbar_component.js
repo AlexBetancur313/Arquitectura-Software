@@ -35,7 +35,7 @@ class CustomNavbar extends HTMLElement {
                 <button id="dropdownBtnsemana2" class="text-gray-300 hover:text-white"><a href="/semana2/cuadro_comparativo.html">Entorno digital</a></button>
               </div>
               <div class="relative">
-           <button id="dropdownBtnsemana3" class="text-gray-300 hover:text-white"><a href="/semana3/ciclo_de_vida_automatización.html">Ciclo de vida de la arquitectura de software</a></button>
+           <button id="dropdownBtnsemana3" class="text-gray-300 hover:text-white"><a href="/semana3/ciclo_de_vida_automatización.html">Ciclo de vida</a></button>
            </div>
            <div class="relative">
             <button id="dropdownBtnsemana4" class="text-gray-300 hover:text-white"><a href="/semana4/parcial_practico.html">Conceptos generales A.S</a></button>    
@@ -79,7 +79,7 @@ class CustomNavbar extends HTMLElement {
                 <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white"><a href="/semana2/cuadro_comparativo.html">Entorno digital</a></button>
               </div>
               <div class="relative">
-            <button id="mobileDropdownBtnsemana3" class="text-gray-300 hover:text-white"><a href="/semana3/ciclo_de_vida_automatización.html">Ciclo de vida de la arquitectura de software</a></button>
+            <button id="mobileDropdownBtnsemana3" class="text-gray-300 hover:text-white"><a href="/semana3/ciclo_de_vida_automatización.html">Ciclo de vida</a></button>
             </div>
             <div class="relative">
             <button id="mobileDropdownBtnsemana4" class="text-gray-300 hover:text-white"><a href="/semana4/parcial_practico.html">Conceptos generales A.S</a></button> 
