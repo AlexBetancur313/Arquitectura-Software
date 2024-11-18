@@ -17,63 +17,83 @@
       href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
       rel="stylesheet"
     />
-  <script src="../componentes/navbar_component.js"></script>
+    <script src="../componentes/navbar_component.js"></script>
   </head>
   <body class="bg-gray-200">
     <custom-navbar></custom-navbar>
     <header class="header">
       <h1 class="header-title">Cuadro Comparativo</h1>
     </header>
-    <main class="m-4 w-3/4 m-auto">
-      <section class="flex flex-col m-auto mt-4 md:w-full">
-        <article
-          class="p-4 bg-gray-100 rounded-lg wow animate__animated animate__fadeInLeft"
-        >
-          <h2 class="text-2xl text-center font-bold">Descripción</h2>
-          <p class="mt-4 p-10">
-            <h2><b>Relación ciencia y tecnología</b></h2>
-            <br>
-            La ciencia es aquella que genera el conocimiento necesario y la tecnología aprovecha este conocimiento para elaborar las herramientas prácticas, por ejemplo, la unión de estos dos los podemos ver en tecnologías que optimizan el almacenamiento y también en análisis de grandes cantidades de datos. 
-            <br>
-            <br>
-            <h2><b>Relación ciencia y técnica</b></h2>
-            <br>
-            La técnica es aquella que aplica métodos específicos para resolver problemas prácticos científicos, ejemplos donde podemos ver a estos unidos son, en el modelado de datos, donde las técnicas organizan los datos de forma precisa, dependiendo que la parte científica valide la precisión y eficiencia de los métodos y procesos.
-            <br>
-            <br>
-            <h2><b>Relación tecnología y técnica</b></h2>
-            <br>
-            La tecnología proporciona las herramientas para facilitar la implementación de las técnicas, ejemplo, el almacenamiento permite aplicar técnicas en tiempo real que mejora la calidad y velocidad del análisis científico, reduciendo la latencia y aumentando la precisión, gracias a las herramientas proporcionadas.
-            <br>
-            <br>
-            <h2><b>Relación tecnología y ciencia</b></h2>
-            <br>
-            La tecnología ayuda a la ciencia proveyendo herramientas que le ayuden a explorar y analizar los datos en grandes cantidades, por ejemplo, permite que la ciencia genere análisis más precisos y rápidos.
-            <br>
-            <br>
-            <h2><b>Relación Técnica y ciencia</b></h2>
-            <br>
-            La ciencia con el conocimiento que proporciona ayuda a las técnicas que se utilizan para resolver los problemas específicos, podemos ver de las dos en el modelado de datos donde las técnicas colaboran con desarrollo de técnicas que mejoran la precisión y eficiencia en el manejo de la información.
-            <br>
-            <br>
-            <h2><b>Relación técnica y tecnología</b></h2>
-            <br>
-            La técnica define los métodos que emplearan las herramientas tecnológicas, por ejemplo, se puede ver esta unión en la optimización de almacenamiento y procesamiento de las tecnologías, mejorando la escalabilidad y que sea mas precisa.
-          </p>
-        </article>
+    <main class="m-4 w-3/4 m-auto wow animate__animated animate__fadeInLeft">
+      <article class="p-4 bg-gray-100 rounded-lg">
+        <h2 class="text-2xl text-center font-bold">Descripción</h2>
 
-        <div class="flex flex-col md:flex-row">
-          <article
-            class="basis-1/2 md:basis-full flex flex-col items-center justify-center p-4"
-          >
-            <h2 class="header-title m-4 text-black">Cuadro Comparativo</h2>
-            <img
-              src="../multimedia/cuadro_comparativo.jpg"
-              alt="Cuadro comparativo"
-            />
-          </article>
-        </div>
-      </section>
+        <!-- Sección: Relación ciencia y tecnología -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación ciencia y tecnología</h3>
+          <p class="mt-4">
+            La ciencia genera el conocimiento necesario, y la tecnología
+            aprovecha este conocimiento para elaborar herramientas prácticas. Un
+            ejemplo es el desarrollo de tecnologías que optimizan el
+            almacenamiento y permiten el análisis de grandes cantidades de
+            datos.
+          </p>
+        </section>
+
+        <!-- Sección: Relación ciencia y técnica -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación ciencia y técnica</h3>
+          <p class="mt-4">
+            La técnica aplica métodos específicos para resolver problemas
+            prácticos científicos. Un ejemplo de esta unión es el modelado de
+            datos, donde las técnicas organizan los datos y la ciencia valida la
+            precisión y eficiencia de los métodos y procesos.
+          </p>
+        </section>
+
+        <!-- Sección: Relación tecnología y técnica -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación tecnología y técnica</h3>
+          <p class="mt-4">
+            La tecnología proporciona herramientas para facilitar la
+            implementación de las técnicas. Por ejemplo, el almacenamiento
+            permite aplicar técnicas en tiempo real, mejorando la calidad y
+            velocidad del análisis científico.
+          </p>
+        </section>
+
+        <!-- Sección: Relación tecnología y ciencia -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación tecnología y ciencia</h3>
+          <p class="mt-4">
+            La tecnología apoya a la ciencia proporcionando herramientas para
+            explorar y analizar grandes cantidades de datos, lo que permite
+            generar análisis más precisos y rápidos.
+          </p>
+        </section>
+
+        <!-- Sección: Relación técnica y ciencia -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación técnica y ciencia</h3>
+          <p class="mt-4">
+            La ciencia proporciona conocimiento que ayuda a mejorar las técnicas
+            utilizadas para resolver problemas específicos. En el modelado de
+            datos, la ciencia y las técnicas colaboran para mejorar la precisión
+            y eficiencia en el manejo de la información.
+          </p>
+        </section>
+
+        <!-- Sección: Relación técnica y tecnología -->
+        <section class="mt-8">
+          <h3 class="text-xl font-semibold">Relación técnica y tecnología</h3>
+          <p class="mt-4">
+            La técnica define los métodos que emplearán las herramientas
+            tecnológicas. Un ejemplo es la optimización del almacenamiento y
+            procesamiento, mejorando la escalabilidad y precisión de las
+            tecnologías.
+          </p>
+        </section>
+      </article>
     </main>
     <script src="../componentes/footer_component.js"></script>
     <custom-footer></custom-footer>
