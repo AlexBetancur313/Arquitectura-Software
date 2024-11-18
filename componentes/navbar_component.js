@@ -16,11 +16,11 @@ class CustomNavbar extends HTMLElement {
       <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
           <a href="/index.html" class="text-white text-xl font-bold">Arquitectura de Software</a>
-          <div class="hidden md:flex space-x-6">
+          <div class="hidden md:flex space-x-6 ">
             <!-- Dropdown Section -->
-            <div class="relative">
+            <div class="relative ">
               <button id="dropdownBtnsemana1" class="text-gray-300 hover:text-white">Introducción</button>
-              <div id="dropdownMenusemana1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded shadow-lg scrollable-dropdown">
+              <div id="dropdownMenusemana1" class="hidden absolute bg-emerald-900 text-white mt-2 rounded bg-cyan-800 shadow-lg scrollable-dropdown ">
                 <a href="/semana1/componentes.html" class="block px-4 py-2 w-32 hover:bg-green-600">Componentes</a>
                 <a href="/semana1/conexiones.html" class="block px-4 py-2 w-32 hover:bg-green-600">Conexiones</a>
                 <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 w-32 hover:bg-green-600">Patrones de Diseño</a>
@@ -43,6 +43,9 @@ class CustomNavbar extends HTMLElement {
             <div class="relative">
             <button id="dropdownBtnsemana5" class="text-gray-300 hover:text-white"><a href="/semana5/taller_estudio_de_caso.html">Taller estudio de caso</a></button>    
             </div>
+            <div class="relative">
+            <button id="dropdownBtnsemana6" class="text-gray-300 hover:text-white"><a href="/semana6/proyecto_final.html">Proyecto final</a></button>    
+            </div>
           </div>
 
           <!-- Mobile menu button -->
@@ -59,7 +62,7 @@ class CustomNavbar extends HTMLElement {
             <!-- Dropdown for mobile -->
             <div>
               <button id="mobileDropdownBtnsemana1" class="block text-gray-300 hover:text-white w-full text-left">Introducción</button>
-              <div id="mobileDropdownMenusemana1" class="hidden bg-emerald-900 rounded-lg">
+              <div id="mobileDropdownMenusemana1" class="hidden bg-emerald-900 rounded bg-cyan-800-lg">
                 <a href="/semana1/componentes.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Componentes</a>
                 <a href="/semana1/conexiones.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Conexiones</a>
                 <a href="/semana1/patrones_de_diseño.html" class="block px-4 py-2 text-gray-300 hover:bg-green-600 hover:text-white">Patrones de Diseño</a>
@@ -71,6 +74,7 @@ class CustomNavbar extends HTMLElement {
               </div>
             </div>
             <div class="relative">
+
                 <button id="mobileDropdownBtnsemana2" class="text-gray-300 hover:text-white"><a href="/semana2/cuadro_comparativo.html">Entorno digital</a></button>
               </div>
               <div class="relative">
@@ -81,6 +85,9 @@ class CustomNavbar extends HTMLElement {
             </div>
             <div class="relative">
             <button id="mobileDropdownBtnsemana5" class="text-gray-300 hover:text-white"><a href="/semana5/taller_estudio_de_caso.html">Taller estudio de caso</a></button>    
+            </div>
+            <div class="relative">
+            <button id="mobileDropdownBtnsemana6" class="text-gray-300 hover:text-white"><a href="/semana6/proyecto_final.html">Proyecto final</a></button>    
             </div>
           </div>
         </div>
@@ -100,9 +107,12 @@ class CustomNavbar extends HTMLElement {
         width: 6px;
       }
       .scrollable-dropdown::-webkit-scrollbar-thumb {
-        background-color: #4CAF50;
+        background-color: rgb(8 51 68);
         border-radius: 10px;
       }
+        .bg-cyan-800{
+          background-color: rgb(21 94 117);
+        }
     `;
     shadow.appendChild(style);
 
