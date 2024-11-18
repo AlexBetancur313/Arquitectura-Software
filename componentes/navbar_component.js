@@ -44,6 +44,9 @@ class CustomNavbar extends HTMLElement {
             <button id="dropdownBtnsemana5" class="text-gray-300 hover:text-white"><a href="/semana5/taller_estudio_de_caso.html">Taller estudio de caso</a></button>    
 
             </div>
+            <div class="relative">
+            <button id="dropdownBtnsemana6" class="text-gray-300 hover:text-white"><a href="/semana6/proyecto_final.html">Proyecto final</a></button>    
+            </div>
           </div>
 
           <!-- Mobile menu button -->
@@ -84,6 +87,9 @@ class CustomNavbar extends HTMLElement {
             <div class="relative">
             <button id="mobileDropdownBtnsemana5" class="text-gray-300 hover:text-white"><a href="/semana5/taller_estudio_de_caso.html">Taller estudio de caso</a></button>    
 
+            </div>
+            <div class="relative">
+            <button id="mobileDropdownBtnsemana6" class="text-gray-300 hover:text-white"><a href="/semana6/proyecto_final.html">Proyecto final</a></button>    
             </div>
           </div>
         </div>
